@@ -33,6 +33,6 @@
    ```
 4. run program（Need network）
    ```bash
-   python driver.py --benchmark-name arg1 --submodule-name arg2 --model arg3 --feedback_strategy arg4
+   python driver.py --benchmark-name arg1 --submodule-name arg2 --model arg3 --feedback-strategy arg4
    ```
   
