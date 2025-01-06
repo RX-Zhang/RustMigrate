@@ -1,0 +1,6 @@
+
+pub const OPL_EMU_REGISTERS_OPERATORS: usize = 36;
+pub const OPL_EMU_REGISTERS_ALL_CHANNELS: usize = (1 << 18) - 1;
+pub const OPL_EMU_REGISTER_PATCH_OPS: usize = 23;
+pub const OPL_EMU_REGISTER_PATCH_OFFS: usize = 0x20;
+pub const OPL_EMU_REGISTER_PATCH_OFFS_STEREO: usize = OPL_EMU_REGISTER_PATCH_OFFS + 1;
