@@ -1,11 +1,10 @@
 from dataclasses import dataclass
 
 test_constraints_prompt = [
-    "For bitwise operations, consider using \'%\' and \'as\' to handle the range of shifts and types of shift amounts.",
+    "Try not to use Traits if possible. I would not like to have Traits in resulting Rust code.",
+    "Try not to use custom Generics if possible.",
     "Use standalone functions rather than struct methods.",
-    "Maintain consistency in function names before and after translation, and do not include the main function.",
     "Just provide me with the translated Rust function, without any additional explanations or a main function calling this function.",
-    "Use Rust-preferred data types, such as i32 instead of int or MaybeUninit<i32>.",
 ]
 
 
