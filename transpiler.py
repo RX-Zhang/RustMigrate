@@ -40,11 +40,11 @@ class Transpiler:
         self.global_constraints = global_constraints
 
     common_translate_constraints = [
-        "Make sure it includes all imports, uses safe rust, and compiles.",
-        "Don't use raw pointers.",
+        "Ensure the Rust code is safe, includes all necessary imports, and avoids raw pointers to guarantee proper compilation and safety.",
         "Use box pointer whenever possible. Box pointers are preferable to other alternatives.",
-        "Try not to use Traits if possible. I would not like to have Traits in resulting Rust code.",
-        "Try not to use custom Generics if possible.",
+        "Use Rust-preferred data types (such as i32 instead of int) and ensure explicit handling of signed/unsigned integer types.",
+        "For bitwise operations, consider using \'%\' and \'as\' to handle the range of shifts and types of shift amounts.",
+        "Maintain consistency in function names before and after translation, and do not include the main function.",
     ]
 
     def transpile(self):
