@@ -114,7 +114,7 @@ def main():
 
     global_constraints = []
     if options.language == "c":
-        global_constraints.append("Consider using wrapping operations like wrapping_add, wrapping_shr, etc., to simulate C semantics.")
+        global_constraints.append("Consider using appropriate overflow handling methods (such as wrapping_*, checked_*, overflowing_*, etc.) to simulate C semantics for integer operations.")
 
     # Create a translation engine
     query_engine = QueryEngineFactory.create_engine(options.model, global_constraints)
